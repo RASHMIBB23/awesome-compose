@@ -13,4 +13,4 @@ services:
 
 volumes:
   app:  # Volume for application code
-  logs: # Volume for logs
+  logs: # volume
