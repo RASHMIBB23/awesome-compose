@@ -1,9 +1,16 @@
+version: "3.8"
+
 services:
-  web:
-    build:
-      context: app
-      target: builder
+  apache-php:
+    image: your-dockerhub-username/my-dev-env:latest  # Use the base image
+    container_name: apache-php-container
     ports:
-      - '80:80'
+      - "8080:80"  # Maps port 8080 on host to 80 in container
     volumes:
-      - ./app:/var/www/html/
+      - ./app:/var/www/html  # Mounts local `app/` directory to container
+      - ./logs:/var/log/apache2  # Stores Apache logs locally
+    restart: always  # Restarts container if it crashes
+
+volumes:
+  app:  # Volume for application code
+  logs: # Volume for logs
