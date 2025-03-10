@@ -6,5 +6,4 @@ services:
     ports:
       - "80:80"
     container_name: angular_container
-    restart: always
-...
+    restart:always:
