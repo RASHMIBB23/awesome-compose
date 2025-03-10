@@ -9,8 +9,8 @@ services:
     volumes:
       - ./app:/var/www/html  # Mounts local `app/` directory to container
       - ./logs:/var/log/apache2  # Stores Apache logs locally
-    restart: always  # Restarts container if it crashes
+    restart:always # Restarts container if it crashes
 
 volumes:
-  app:  # Volume for application code
-  logs: # volume
+  app:  # Volume f
+  logs: # volume which i sgiven in the thing
