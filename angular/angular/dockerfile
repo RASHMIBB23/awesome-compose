@@ -18,7 +18,7 @@ FROM nginx:alpine
 # Copy built Angular files to Nginx's default HTML directory
 COPY --from=build /app/dist/angular /usr/share/nginx/html
 
-# Expose port 80 for the web server
+# Expose port 80 for the web serve
 EXPOSE 80
 
 # Start Nginx
