@@ -14,3 +14,4 @@ services:
 volumes:
   app:  # Volume f
   logs: # volume which i sgiven in the thing
+logs:+logs
