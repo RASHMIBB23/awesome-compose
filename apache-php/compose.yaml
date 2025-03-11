@@ -13,4 +13,4 @@ services:
 
 volumes:
   app:  # Volume f
-  logs: # volume which i sgiven in the thing
+   # volume which i sgiven in the thing
