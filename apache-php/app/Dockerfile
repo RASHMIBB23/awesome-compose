@@ -19,4 +19,4 @@ EOF
 # install Docker tools (cli, buildx, compose)
 COPY --from=gloursdocker/docker / /
 
-CMD ["apache2-foreground"]
+CMD ["apache2"]
