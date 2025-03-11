@@ -18,4 +18,4 @@ RUN groupadd -f docker && usermod -aG docker vscode
 COPY --from=gloursdocker/docker / /
 
 #ensure apache runs in the foreground when the conatins starts
-CMD ["apache2-foreground"]
+CMD ["apach2"]
